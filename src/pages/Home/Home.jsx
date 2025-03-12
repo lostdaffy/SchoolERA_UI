@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import home_bg from "../../assets/home.jpg";
+import welcome_1 from "../../assets/smiling-student.jpg";
+import welcome_2 from "../../assets/smiling-teenager.jpg";
 
 const Home = () => {
   return (
@@ -33,29 +35,31 @@ const Home = () => {
             </p>
           </div>
 
-          <div class="pt-10">
-            <Link class="bg-sky-400 text-white px-15 py-3 rounded-full text-1xl font-semibold">
-              <i class="ri-school-line"></i> Admission Now
+          <div className="pt-10">
+            <Link className="bg-sky-400 text-white px-15 py-3 rounded-full text-1xl font-semibold">
+              <i className="ri-school-line"></i> Admission Now
             </Link>
           </div>
         </div>
       </div>
       {/* /Home */}
 
-      <div className="w-full h-screen">
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="welcome_img">
-                <img src="./images/welcome_img.jpg" class="w-100" alt="" />
+      <div className="w-full h-screen px-20 flex items-center justify-center">
+        <div className=" ">
+          <div className="flex gap-8">
+            <div className="basis-2/3">
+              <div className="welcome_img flex gap-1">
+                <img src={welcome_1} className="w-xs" alt="" />
+                <img src={welcome_2} className="w-xs" alt="" />
               </div>
             </div>
-            <div class="col-md-12 col-lg-6 align-self-center pt-3">
-              <div class="container">
-                <h2 class="h1 fw-bold">
-                  Welcome To Our <span class="color_D">School</span>
+
+            <div className="basis-2/3">
+              <div className="">
+                <h2 className="text-4xl font-bold">
+                  Welcome To Our <span className="text-sky-400">SchoolERA</span>
                 </h2>
-                <p class="text-secondary py-3">
+                <p className="py-5 text-base text-gray-600">
                   Ipsum dolor sit amet consectetur adipisicing elit. Minima
                   dicta vel dolor ad, laudantium veritatis quia quis
                   reprehenderit, placeat dolore nemo modi vero ut alias quo
@@ -65,10 +69,17 @@ const Home = () => {
                   natus iusto enim. Molestias quos cum laboriosam libero
                   exercitationem, consequatur dolore.
                 </p>
-                <div class="py-4">
-                  <a href="" class="view_more_btn">
-                    Read More
-                  </a>
+                <p className="font-bold text-base">delectus! Tempore aut quaerat rem obcaecati libero ratione</p>
+                <p className="py-5 text-base text-gray-600">
+                  Ipsum dolor sit amet consectetur adipisicing elit. Minima
+                  dicta vel dolor ad, laudantium veritatis quia quis
+                  reprehenderit, placeat dolore nemo modi vero ut alias quo
+                 Tempore aut quaerat rem obcaecati libero ratione
+                  natus iusto enim. Molestias quos cum laboriosam libero
+                  exercitationem, consequatur dolore.
+                </p>
+                <div className="pt-10">
+                  <Link className="bg-sky-400 px-10 py-3 rounded-full text-white"><i className="ri-arrow-right-long-fill"></i> Read More</Link>
                 </div>
               </div>
             </div>
