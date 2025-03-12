@@ -1,0 +1,19 @@
+div.welcome_img img {
+    border-radius: 1rem 6rem;
+}
+
+.view_more_btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    background: var(--primary);
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+/* /Welcome Section */
