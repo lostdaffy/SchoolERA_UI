@@ -5,3 +5,7 @@
 *{
     font-family: "Raleway", sans-serif;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
